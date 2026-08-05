@@ -3,7 +3,7 @@ FROM docker.io/library/node:22-alpine AS builder
 # Create app directory
 WORKDIR /app
 
-COPY source-src/web/package.json .
+COPY source-src/package.json .
 
 RUN npm install --registry=https://registry.npmmirror.com
 

@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY source-src/ .
 
+RUN npm install -g npm@11
+
 RUN npm install --registry=https://registry.npmmirror.com
 
 RUN npm run build
